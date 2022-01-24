@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=20&m=1138395421&s=612x612&w=0&h=FPYxPgxJBNucc79Z3fxAehsW6gvjw5jP17CJMsBRjGM=') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+}
+
+.ava{
+    height: 115px;
+    width: 110px;
+    position: relative;
+    left: 30%;
+    top: 25px;
+    border: 2px solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+h3{
+    margin-top: 10px;
+    text-align: center;
+    color:salmon;
+}
+
+.box1:hover, .box2:hover{
+    box-shadow: 0 0 20px rgb(22, 57, 155);
+    transform: translateY(-5px);
+}
+
+.box1, .box2{
+    background-color: black;
+    height: 55%;
+    width: 270px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.contact{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+button:hover{
+    background-color: rgb(194, 69, 53);
+}
+
+button{
+    height: 35px;
+    width: 90px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px salmon solid;
+    background-color: black;
+    color: aliceblue;
+    transition: 1s;
+}
+
+.left, .right{
+    height: 120px;
+    width: 80px;
+    background-color: palevioletred;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+
+.left{
+    transform: rotate(-30deg) translateX(30px) ;
+    animation: left 1.5s infinite;
+}
+
+.right{
+    transform: rotate(30deg) translateX(-30px);
+    animation: right 1.5s infinite;
+}
+
+@keyframes left {
+    0{
+
+    }
+    50%{
+    transform: rotate(-30deg) translateX(10px) scale(2);
+    }
+}
+
+@keyframes right {
+    0{
+
+    }
+    50%{
+    transform: rotate(30deg) translateX(-10px) scale(2);
+    }
+} 
+    
